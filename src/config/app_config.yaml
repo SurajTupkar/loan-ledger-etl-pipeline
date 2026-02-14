@@ -1,0 +1,27 @@
+app:
+  name: LoanLedger-Pipeline
+  env: local   # local | aws
+
+paths:
+  local:
+    raw_path: file:///mnt/d/PySpark/CSV_FILE/loan_data.csv
+    curated_path: file:///mnt/d/PySpark/output/curated/
+    rejected_path: file:///mnt/d/PySpark/output/rejected/
+
+
+  aws:
+    raw_path: s3://loan-ledger/raw/
+    curated_path: s3://loan-ledger/curated/
+    rejected_path: s3://loan-ledger/rejected/
+
+rds:
+  engine: mysql
+  url: jdbc:mysql://<endpoint>:3306/loandb
+  user: loan_user
+  password: loan_pass
+  table: loan_summary
+  secret_name: rds/loanledger/mysql
+
+spark:
+  shuffle_partitions: 200
+  executor_memory: 4g

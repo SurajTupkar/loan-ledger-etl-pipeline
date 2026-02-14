@@ -1,0 +1,17 @@
+# Virtual env
+venv/
+
+# logs
+logs/
+
+# python cache
+__pycache__/
+*.pyc
+
+# spark temp
+.metastore_db/
+spark-warehouse/
+
+# os
+.DS_store
+Thumbs.db
