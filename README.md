@@ -21,9 +21,16 @@ Features
 
 Project Architecture :
 
-Extract  →  Transform  →  Quality Check  →  Load
-   ↓           ↓             ↓              ↓
- Local/S3   Cleaning     Validation      S3 / RDS
+Source (Local / S3)
+      ↓
+Extract (CSV Reader)
+      ↓
+Transform (Cleaning + Business Rules)
+      ↓
+Data Quality Validation
+      ↓
+Load (S3 / MySQL RDS)
+
 
 
 📂 Folder Structure
@@ -161,3 +168,4 @@ Risk assessment
 Suraj Tupkar
 Data Engineer 
 Python | SQL | PySpark | AWS | ETL Pipelines
+
