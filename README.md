@@ -4,7 +4,7 @@ Overview
 
 The Loan Ledger ETL Pipeline is an end-to-end data engineering project built using PySpark to process, validate, transform, and load loan-related financial data.
 
-This pipeline is designed to simulate a real-world production data system, supporting both local and cloud (AWS S3) environments using configuration-driven architecture.
+This pipeline is designed to simulate a real-world production data system, supporting both local and cloud (AWS S3) environments using a configuration-driven architecture.
 
 Features
 
@@ -89,10 +89,12 @@ paths:
     input: s3://bucket/raw/
     output: s3://bucket/curated/
 
-Change environment to switch between local and AWS.
+Change the environment to switch between local and AWS.
+
 
 ▶️ How to Run the Pipeline
 
+```
 
 1️⃣ Create Virtual Environment
 python3 -m venv venv
@@ -101,6 +103,8 @@ source venv/bin/activate
 pip install -r requirements.txt
 3️⃣ Run the ETL Job
 spark-submit main.py
+
+```
 
 
 🧪 Testing
@@ -131,14 +135,14 @@ Example format:
 
 ```
 -------------------------------------------------
-Module	               |      Status             
-Local Processing	      |      ✅                 
-AWS S3 Support	         |      ✅                 
-Data Quality	         |      ✅
-Logging	               |      ✅
-RDS Integration	      |      ⏳ In Progress
-Incremental Load	      |      ⏳ Planned
-Airflow Orchestration   |	    ⏳ Planned
+Module	                     Status             
+Local Processing	            ✅                 
+AWS S3 Support	               ✅                 
+Data Quality	               ✅
+Logging	                     ✅
+RDS Integration	            ⏳ In Progress
+Incremental Load	            ⏳ Planned
+Airflow Orchestration   	    ⏳ Planned
 -------------------------------------------------
 ```
 
@@ -168,6 +172,7 @@ Risk assessment
 Suraj Tupkar
 Data Engineer 
 Python | SQL | PySpark | AWS | ETL Pipelines
+
 
 
 
