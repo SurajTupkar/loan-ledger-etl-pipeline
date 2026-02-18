@@ -21,19 +21,16 @@ Features
 
 Project Architecture :
 
-```Source (Local / S3)
-      ↓
-Extract (CSV Reader)
-      ↓
-Transform (Cleaning + Business Rules)
-      ↓
-Data Quality Validation
-      ↓
-Load (S3 / MySQL RDS)
+```
+Extract  →  Transform  →  Quality Check  →  Load
+   ↓           ↓             ↓              ↓
+ Local/S3   Cleaning     Validation      S3 / RDS
 
-
+```
 
 📂 Folder Structure
+
+```
 
 src/
 ├── main.py
@@ -60,6 +57,7 @@ deployment/
 requirements.txt
 README.md
 
+```
 
 ⚙️ Technology Stack
 
@@ -130,17 +128,19 @@ Example format:
 
 
 🛠️ Current Status
+
+```
 -------------------------------------------------
 Module	               |      Status             
-Local Processing	      |      ✅                 
+Local Processing	         |      ✅                 
 AWS S3 Support	         |      ✅                 
 Data Quality	         |      ✅
 Logging	               |      ✅
-RDS Integration	      |    ⏳ In Progress
-Incremental Load	      |    ⏳ Planned
-Airflow Orchestration   |	   ⏳ Planned
+RDS Integration	         |    ⏳ In Progress
+Incremental Load	         |    ⏳ Planned
+Airflow Orchestration      |	   ⏳ Planned
 -------------------------------------------------
-
+```
 
 📈 Future Enhancements
 
@@ -168,5 +168,6 @@ Risk assessment
 Suraj Tupkar
 Data Engineer 
 Python | SQL | PySpark | AWS | ETL Pipelines
+
 
 
