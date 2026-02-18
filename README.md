@@ -8,6 +8,7 @@ This pipeline is designed to simulate a real-world production data system, suppo
 
 Features
 
+```
 ✅ Config-driven environment setup (Local / AWS)
 ✅ Scalable data ingestion from file system / S3
 ✅ Data cleaning and validation
@@ -17,7 +18,7 @@ Features
 ✅ Modular load layer (S3 / RDS ready)
 ✅ Centralized logging
 ✅ Test-ready structure
-
+```
 
 Project Architecture :
 
@@ -92,13 +93,12 @@ Change environment to switch between local and AWS.
 
 ▶️ How to Run the Pipeline
 
+
 1️⃣ Create Virtual Environment
 python3 -m venv venv
 source venv/bin/activate
-
 2️⃣ Install Dependencies
 pip install -r requirements.txt
-
 3️⃣ Run the ETL Job
 spark-submit main.py
 
@@ -132,13 +132,13 @@ Example format:
 ```
 -------------------------------------------------
 Module	               |      Status             
-Local Processing	         |      ✅                 
+Local Processing	      |      ✅                 
 AWS S3 Support	         |      ✅                 
 Data Quality	         |      ✅
 Logging	               |      ✅
-RDS Integration	         |    ⏳ In Progress
-Incremental Load	         |    ⏳ Planned
-Airflow Orchestration      |	   ⏳ Planned
+RDS Integration	      |      ⏳ In Progress
+Incremental Load	      |      ⏳ Planned
+Airflow Orchestration   |	    ⏳ Planned
 -------------------------------------------------
 ```
 
@@ -168,6 +168,7 @@ Risk assessment
 Suraj Tupkar
 Data Engineer 
 Python | SQL | PySpark | AWS | ETL Pipelines
+
 
 
 
