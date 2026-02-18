@@ -124,14 +124,14 @@ Example format:
 
 🛠️ Current Status
 -------------------------------------------------
-Module	              |      Status             
-Local Processing	  |      ✅                 
-AWS S3 Support	      |      ✅                 
-Data Quality	      |      ✅
-Logging	              |      ✅
+Module	               |      Status             
+Local Processing	      |      ✅                 
+AWS S3 Support	         |      ✅                 
+Data Quality	         |      ✅
+Logging	               |      ✅
 RDS Integration	      |    ⏳ In Progress
-Incremental Load	  |    ⏳ Planned
-Airflow Orchestration |	   ⏳ Planned
+Incremental Load	      |    ⏳ Planned
+Airflow Orchestration   |	   ⏳ Planned
 -------------------------------------------------
 
 
